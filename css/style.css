@@ -85,14 +85,14 @@ a:focus-visible, button:focus-visible, .btn:focus-visible, input:focus-visible, 
   text-transform: uppercase; letter-spacing: 0.14em; font-size: 0.8rem; font-weight: 500;
   transition: all .25s ease; border-width: 1.5px; }
 
-.btn-gold{ background: var(--gold); border-color: var(--gold); color: var(--navy-deep); }
-.btn-gold:hover{ background: var(--gold-bright); border-color: var(--gold-bright); color: var(--navy-deep); }
+.btn-gold{ background: var(--gold); border-color: var(--gold); color: var(--navy-deep); border-radius:25px; }
+.btn-gold:hover{ background: var(--gold-bright); border-color: var(--gold-bright); color: var(--navy-deep);  border-radius:25px; }
 
-.btn-outline-cream{ background: transparent; border-color: rgba(250,248,243,0.55); color: var(--cream); }
-.btn-outline-cream:hover{ background: var(--cream); border-color: var(--cream); color: var(--navy-deep); }
+.btn-outline-cream{ background: transparent; border-color: rgba(250,248,243,0.55); color: var(--cream); border-radius:25px;  }
+.btn-outline-cream:hover{ background: var(--cream); border-color: var(--cream); color: var(--navy-deep); border-radius:25px;  }
 
-.btn-outline-navy{ background: transparent; border-color: var(--navy); color: var(--navy); }
-.btn-outline-navy:hover{ background: var(--navy); border-color: var(--navy); color: var(--cream); }
+.btn-outline-navy{ background: transparent; border-color: var(--navy); color: var(--navy); border-radius:25px;  }
+.btn-outline-navy:hover{ background: var(--navy); border-color: var(--navy); color: var(--cream); border-radius:25px;  }
 
 /* ---------------- Navbar ---------------- */
 .kfs-navbar{
