@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gallery | Keystone Freight Systems</title>
+<meta name="description" content="A look at the freight, fleet, and facilities Keystone Freight Systems coordinates every day out of Edmonton, AB.">
+<link rel="icon" href="assets/logo-mark.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg kfs-navbar fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">
+      <img src="assets/logo-mark.png" alt="Keystone Freight Systems logo">
+      <span>
+        <span class="kfs-brand-word d-block">Keystone</span>
+        <span class="kfs-brand-sub">Freight Systems</span>
+      </span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#kfsNav" aria-controls="kfsNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="kfsNav">
+      <ul class="navbar-nav ms-auto align-items-lg-center">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+        <li class="nav-item"><a class="nav-link active" href="gallery.html">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+        <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
+          <a class="btn btn-gold btn-sm" href="contact.html">Get A Quote</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- PAGE HERO -->
+<header class="page-hero page-hero--photo" style="padding-top: 9.5rem; --hero-photo: url('assets/gallery/9.jpg');">
+  <div class="container position-relative">
+    <span class="eyebrow on-dark">Gallery</span>
+    <h1 class="mt-2">Freight in motion.</h1>
+    <p>A look at the fleet, freight, and facilities behind every Keystone shipment.</p>
+  </div>
+</header>
+
+<!-- GALLERY GRID -->
+<section>
+  <div class="container">
+
+    <div class="gallery-filters reveal" role="group" aria-label="Filter gallery by category">
+      <button type="button" class="gallery-filter is-active" data-filter="all">All</button>
+      <button type="button" class="gallery-filter" data-filter="flatbed">Flatbed &amp; Machinery</button>
+      <button type="button" class="gallery-filter" data-filter="oversized">Oversized Loads</button>
+      <button type="button" class="gallery-filter" data-filter="winter-night">Winter &amp; Night Ops</button>
+    </div>
+
+    <div class="row g-4" id="galleryGrid">
+
+      <div class="col-md-6 col-lg-8">
+        <button type="button" class="gallery-tile gallery-tile--wide reveal" style="--reveal-i:0" data-category="flatbed"
+          data-bs-toggle="modal" data-bs-target="#galleryLightbox"
+          data-img="assets/gallery/1.jpg" data-caption="Full Truckload — Agricultural Equipment">
+          <span class="tile-badge">Flatbed</span>
+          <img src="assets/gallery/1.jpg" alt="Flatbed truck hauling agricultural equipment on a clear day">
+          <span class="zoom-hint"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></span>
+          <figcaption>Full Truckload — Agricultural Equipment</figcaption>
+        </button>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <button type="button" class="gallery-tile reveal" style="--reveal-i:1" data-category="flatbed"
+          data-bs-toggle="modal" data-bs-target="#galleryLightbox"
+          data-img="assets/gallery/2.jpg" data-caption="Flatbed — Ag Equipment Delivery">
+          <span class="tile-badge">Flatbed</span>
+          <img src="assets/gallery/2.jpg" alt="Truck loaded with machinery ready for pickup">
+          <span class="zoom-hint"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></span>
+          <figcaption>Flatbed — Ag Equipment Delivery</figcaption>
+        </button>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <button type="button" class="gallery-tile reveal" style="--reveal-i:2" data-category="flatbed"
+          data-bs-toggle="modal" data-bs-target="#galleryLightbox"
+          data-img="assets/gallery/3.jpg" data-caption="Flatbed — Specialized Equipment">
+          <span class="tile-badge">Flatbed</span>
+          <img src="assets/gallery/3.jpg" alt="Flatbed truck hauling wrapped specialized equipment">
+          <span class="zoom-hint"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></span>
+          <figcaption>Flatbed — Specialized Equipment</figcaption>
+        </button>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <button type="button" class="gallery-tile reveal" style="--reveal-i:3" data-category="winter-night"
+          data-bs-toggle="modal" data-bs-target="#galleryLightbox"
+          data-img="assets/gallery/4.jpg" data-caption="Winter Lane — Oversized Equipment">
+          <span class="tile-badge">Winter</span>
+          <img src="assets/gallery/4.jpg" alt="Truck hauling equipment through winter conditions">
+          <span class="zoom-hint"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></span>
+          <figcaption>Winter Lane — Oversized Equipment</figcaption>
+        </button>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <button type="button" class="gallery-tile reveal" style="--reveal-i:4" data-category="oversized"
+          data-bs-toggle="modal" data-bs-target="#galleryLightbox"
+          data-img="assets/gallery/5.jpg" data-caption="Oversized Load — Winter Transport">
+          <span class="tile-badge">Oversized</span>
+          <img src="assets/gallery/5.jpg" alt="Truck hauling an oversized wrapped load marked Over Size Load in the snow">
+          <span class="zoom-hint"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></span>
+          <figcaption>Oversized Load — Winter Transport</figcaption>
+        </button>
+      </div>
+
+      <div class="col-md-6 col-lg-8">
+        <button type="button" class="gallery-tile gallery-tile--wide reveal" style="--reveal-i:5" data-category="oversized"
+          data-bs-toggle="modal" data-bs-target="#galleryLightbox"
+          data-img="assets/gallery/6.jpg" data-caption="Oversized Load — Cross-Border Route">
+          <span class="tile-badge">Oversized</span>
+          <img src="assets/gallery/6.jpg" alt="Truck hauling an oversized wrapped load at dusk on an icy road">
+          <span class="zoom-hint"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></span>
+          <figcaption>Oversized Load — Cross-Border Route</figcaption>
+        </button>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <button type="button" class="gallery-tile reveal" style="--reveal-i:6" data-category="winter-night"
+          data-bs-toggle="modal" data-bs-target="#galleryLightbox"
+          data-img="assets/gallery/7.jpg" data-caption="Night Delivery — Time-Critical Freight">
+          <span class="tile-badge">Night</span>
+          <img src="assets/gallery/7.jpg" alt="Truck hauling a wrapped load at night">
+          <span class="zoom-hint"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></span>
+          <figcaption>Night Delivery — Time-Critical Freight</figcaption>
+        </button>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <button type="button" class="gallery-tile reveal" style="--reveal-i:7" data-category="flatbed"
+          data-bs-toggle="modal" data-bs-target="#galleryLightbox"
+          data-img="assets/gallery/8.jpg" data-caption="Flatbed — Machinery &amp; Equipment">
+          <span class="tile-badge">Flatbed</span>
+          <img src="assets/gallery/8.jpg" alt="Truck loaded with agricultural machinery in an open lot">
+          <span class="zoom-hint"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></span>
+          <figcaption>Flatbed — Machinery &amp; Equipment</figcaption>
+        </button>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <button type="button" class="gallery-tile reveal" style="--reveal-i:8" data-category="oversized"
+          data-bs-toggle="modal" data-bs-target="#galleryLightbox"
+          data-img="assets/gallery/9.jpg" data-caption="Oversized Load — Highway Transport">
+          <span class="tile-badge">Oversized</span>
+          <img src="assets/gallery/9.jpg" alt="Truck hauling an oversized wrapped load on a snowy highway at dusk">
+          <span class="zoom-hint"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></span>
+          <figcaption>Oversized Load — Highway Transport</figcaption>
+        </button>
+      </div>
+
+      <p class="text-secondary text-center d-none mt-4" id="galleryEmptyState">No photos in this category yet.</p>
+
+    </div>
+  </div>
+</section>
+
+<!-- LIGHTBOX -->
+<div class="modal fade" id="galleryLightbox" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      <div class="modal-body">
+        <img src="" alt="" id="lightboxImage">
+        <figcaption id="lightboxCaption"></figcaption>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CTA -->
+<section class="section-tight" style="background: var(--gold-tint);">
+  <div class="container text-center reveal">
+    <span class="eyebrow">See Your Freight Move</span>
+    <h2 class="mt-2 mb-4">Let's put your next shipment on the board.</h2>
+    <a href="contact.html" class="btn btn-outline-navy">Request A Quote</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="kfs-footer">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-4">
+        <div class="footer-brand">
+          <img src="assets/logo-mark.png" alt="Keystone Freight Systems logo">
+          <div>
+            <span class="kfs-brand-word d-block">Keystone</span>
+            <span class="kfs-brand-sub">Freight Systems</span>
+          </div>
+        </div>
+        <p class="small">Strength. Service. Solutions. A freight brokerage built to keep shippers and carriers moving together.</p>
+      </div>
+      <div class="col-6 col-lg-2">
+        <h5>Navigate</h5>
+        <ul class="list-unstyled d-flex flex-column gap-2">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-lg-3">
+        <h5>Services</h5>
+        <ul class="list-unstyled d-flex flex-column gap-2">
+          <li><a href="services.html">Full Truckload</a></li>
+          <li><a href="services.html">LTL &amp; Partial</a></li>
+          <li><a href="services.html">Cross-Border Freight</a></li>
+          <li><a href="services.html">Warehousing &amp; Logistics</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3">
+        <h5>Contact</h5>
+        <ul class="list-unstyled d-flex flex-column gap-2">
+          <li>Edmonton, AB, Canada</li>
+          <li><a href="mailto:info@keystonefreightsystems.com">info@keystonefreightsystems.com</a></li>
+          <li>Mon–Fri, 7:00 AM – 6:00 PM MT</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom d-flex flex-wrap justify-content-between gap-2">
+      <span>&copy; 2026 Keystone Freight Systems. All rights reserved.</span>
+      <span>Edmonton, Alberta, Canada</span>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
+<script>
+(function () {
+  "use strict";
+
+  // Category filter
+  var filters = document.querySelectorAll(".gallery-filter");
+  var tiles = document.querySelectorAll(".gallery-tile[data-category]");
+  var emptyState = document.getElementById("galleryEmptyState");
+
+  filters.forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      filters.forEach(function (b) { b.classList.remove("is-active"); });
+      btn.classList.add("is-active");
+      var filter = btn.getAttribute("data-filter");
+      var visibleCount = 0;
+      tiles.forEach(function (tile) {
+        var match = filter === "all" || tile.getAttribute("data-category") === filter;
+        tile.parentElement.classList.toggle("d-none", !match);
+        if (match) visibleCount++;
+      });
+      if (emptyState) emptyState.classList.toggle("d-none", visibleCount > 0);
+    });
+  });
+
+  // Lightbox
+  var lightbox = document.getElementById("galleryLightbox");
+  if (lightbox) {
+    lightbox.addEventListener("show.bs.modal", function (event) {
+      var trigger = event.relatedTarget;
+      if (!trigger) return;
+      var img = document.getElementById("lightboxImage");
+      var caption = document.getElementById("lightboxCaption");
+      img.src = trigger.getAttribute("data-img");
+      img.alt = trigger.getAttribute("data-caption") || "";
+      caption.textContent = trigger.getAttribute("data-caption") || "";
+    });
+  }
+})();
+</script>
+</body>
+</html>
