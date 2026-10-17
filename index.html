@@ -7,345 +7,256 @@
 <meta name="description" content="Keystone Freight Systems is a full-service freight brokerage based in Edmonton, AB — strength, service, and solutions for shippers and carriers across North America.">
 <link rel="icon" type="image/png" href="assets/logo-mark.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700;800&display=swap" rel="stylesheet">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-<link href="css/style.css" rel="stylesheet">
+<link href="assets/css/style.css" rel="stylesheet">
 </head>
-<body>
+<body class="ud-home">
 
-<!-- NAVBAR -->
-<nav class="navbar navbar-expand-lg kfs-navbar fixed-top">
+<div class="ud-topbar">
+  <div class="container ud-topbar-inner">
+    <span class="ud-topbar-item ud-topbar-addr"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg>Edmonton, AB, Canada</span>
+    <a class="ud-topbar-item" href="mailto:info@keystonefreightsystems.com"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>info@keystonefreightsystems.com</a>
+    <a class="ud-topbar-item" href="tel:+17805550123"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>+1 (780) 555-0123</a>
+  </div>
+</div>
+
+<nav class="navbar navbar-expand-lg ud-nav" data-bs-theme="light" aria-label="Main">
   <div class="container">
     <a class="navbar-brand" href="index.html">
-      <img src="assets/logo-mark.png" alt="Keystone Freight Systems logo">
-      <span>
-        <span class="kfs-brand-word d-block">Keystone</span>
-        <span class="kfs-brand-sub">Freight Systems</span>
-      </span>
+      <img src="assets/img/logo-mark.png" alt="Keystone Freight Systems logo">
+      <span><span class="kfs-brand-word d-block">Keystone</span><span class="kfs-brand-sub">Freight Systems</span></span>
     </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#kfsNav" aria-controls="kfsNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#kfsNav" aria-controls="kfsNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
     <div class="collapse navbar-collapse" id="kfsNav">
       <ul class="navbar-nav ms-auto align-items-lg-center">
-        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
-        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
-        <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
-        <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
-          <a class="btn btn-gold btn-sm" href="contact.html">Get A Quote</a>
+        <li class="nav-item"><a class="nav-link active" href="index.html" aria-current="page">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About us</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="services.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Services</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="services.html">All services</a></li>
+            <li><a class="dropdown-item" href="services.html">Full truckload</a></li>
+            <li><a class="dropdown-item" href="services.html">LTL &amp; partial</a></li>
+            <li><a class="dropdown-item" href="services.html">Cross-border freight</a></li>
+            <li><a class="dropdown-item" href="services.html">Live load tracking</a></li>
+          </ul>
         </li>
+        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact us</a></li>
+        <li class="nav-item ms-lg-3 mt-3 mt-lg-0"><a class="ud-btn" href="contact.html">Request a quote</a></li>
       </ul>
     </div>
   </div>
 </nav>
 
-<!-- HERO -->
-<header class="home-hero">
-  <div class="container position-relative">
-    <div class="row">
-      <div class="col-lg-7">
-        <span class="eyebrow on-dark">Freight Brokerage · Edmonton, Alberta</span>
-        <h1 class="mt-3 mb-4">Strength, service, and solutions&nbsp;— for every load, every lane.</h1>
-        <p class="lead mb-4">Keystone Freight Systems connects shippers with vetted carriers across North America, handling the negotiation, paperwork, and tracking so your freight moves on time, every time.</p>
-        <div class="d-flex flex-wrap gap-3">
-          <a href="contact.html" class="btn btn-gold">Request A Quote</a>
-          <a href="services.html" class="btn btn-outline-cream">Our Services</a>
-        </div>
-      </div>
+<main>
+
+<header class="ud-hero">
+  <video class="ud-hero-video" autoplay muted loop playsinline preload="auto" poster="assets/img/gallery/3.jpg" aria-hidden="true">
+    <source src="assets/video/hero-video.mp4" type="video/mp4">
+  </video>
+  <div class="container ud-hero-body">
+    <span class="ud-hero-kicker">Leading freight brokerage experts</span>
+    <h1>Your trusted partner in freight brokerage</h1>
+    <p>Keystone Freight Systems connects shippers with vetted carriers across North America, and handles the negotiation, paperwork, and tracking so your freight arrives on time.</p>
+    <div class="ud-hero-actions">
+      <a href="contact.html" class="ud-btn">Get started</a>
+      <a href="services.html" class="ud-btn ud-btn--ghost">View our services</a>
     </div>
   </div>
 </header>
 
-<!-- ROUTE / TRUST STRIP 
-<section class="bg-navy section-tight pb-5">
+<section class="ud-section ud-services">
   <div class="container">
-    <div class="route-line flex-wrap flex-md-nowrap reveal">
-      <div class="route-node">
-        <span class="diamond"></span>
-        <div class="stat-num">Licensed</div>
-        <div class="stat-label">&amp; Bonded Broker</div>
-      </div>
-      <div class="route-node">
-        <span class="diamond"></span>
-        <div class="stat-num">24/7</div>
-        <div class="stat-label">Dispatch Support</div>
-      </div>
-      <div class="route-node">
-        <span class="diamond"></span>
-        <div class="stat-num">Cross-Border</div>
-        <div class="stat-label">Canada &amp; U.S. Lanes</div>
-      </div>
-      <div class="route-node">
-        <span class="diamond"></span>
-        <div class="stat-num">Vetted</div>
-        <div class="stat-label">Carrier Network</div>
-      </div>
+    <span class="ud-eyebrow">Our services</span>
+    <h2>We are the leading experts in freight brokerage</h2>
+    <p class="ud-lead">Dry van, reefer, flatbed, and oversized capacity, matched to your lane by people you can reach.</p>
+    <div class="row g-4 mt-2">
+      <div class="col-md-6 col-lg-3"><article class="ud-card"><img src="assets/img/gallery/1.jpg" alt="Flatbed truck hauling agricultural equipment"><div><h3>Full truckload</h3><p>Dry van, reefer, and flatbed FTL across Western Canada and beyond.</p></div></article></div>
+      <div class="col-md-6 col-lg-3"><article class="ud-card"><img src="assets/img/gallery/2.jpg" alt="Truck loaded with machinery"><div><h3>LTL &amp; partial</h3><p>Consolidated shipments that keep smaller freight on budget.</p></div></article></div>
+      <div class="col-md-6 col-lg-3"><article class="ud-card"><img src="assets/img/gallery/6.jpg" alt="Oversized load on an icy road at dusk"><div><h3>Cross-border freight</h3><p>Customs-ready Canada–U.S. moves with compliance support.</p></div></article></div>
+      <div class="col-md-6 col-lg-3"><article class="ud-card"><img src="assets/img/gallery/7.jpg" alt="Truck hauling a wrapped load at night"><div><h3>Live load tracking</h3><p>Real-time visibility from pickup to final delivery.</p></div></article></div>
     </div>
+    <a href="services.html" class="ud-link mt-4">Explore all services <svg viewBox="0 0 24 24"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg></a>
   </div>
 </section>
 
-<!-- WHAT WE DO -->
-<section>
-  <div class="container">
-    <div class="row justify-content-between align-items-end mb-5 reveal">
-      <div class="col-lg-7">
-        <span class="eyebrow">What We Do</span>
-        <h2 class="mt-2 mb-0">One point of contact for the entire shipment.</h2>
-      </div>
-      <div class="col-lg-4 mt-4 mt-lg-0">
-        <p class="text-secondary mb-0">From a single pallet to a full truckload, we match your freight with the right carrier and stay on it until it's delivered.</p>
-      </div>
-    </div>
-    <div class="row g-4 reveal">
-      <div class="col-md-6 col-lg-3">
-        <div class="kfs-card">
-          <div class="icon-wrap">
-            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="7" width="14" height="10"/><path d="M15 10h4l3 3v4h-7z"/><circle cx="6" cy="19" r="2"/><circle cx="18" cy="19" r="2"/></svg>
-          </div>
-          <h3>Full Truckload</h3>
-          <p>Dry van, reefer, and flatbed FTL capacity across Western Canada and beyond.</p>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-3">
-        <div class="kfs-card">
-          <div class="icon-wrap">
-            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
-          </div>
-          <h3>LTL &amp; Partial</h3>
-          <p>Consolidated less-than-truckload solutions that keep smaller shipments on budget.</p>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-3">
-        <div class="kfs-card">
-          <div class="icon-wrap">
-            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 L2 8 L12 14 L22 8 Z"/><path d="M2 16 L12 22 L22 16"/><path d="M2 12 L12 18 L22 12"/></svg>
-          </div>
-          <h3>Cross-Border Freight</h3>
-          <p>Customs-ready Canada–U.S. moves backed by experienced compliance support.</p>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-3">
-        <div class="kfs-card">
-          <div class="icon-wrap">
-            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
-          </div>
-          <h3>Live Load Tracking</h3>
-          <p>Real-time visibility and proactive updates from pickup to final delivery.</p>
-        </div>
-      </div>
-    </div>
-    <div class="text-center mt-5">
-      <a href="services.html" class="btn btn-outline-navy">View All Services</a>
-    </div>
-  </div>
-</section>
-
-<!-- HOW IT WORKS -->
-<section class="bg-cream-dim">
-  <div class="container">
-    <div class="text-center mb-5 reveal">
-      <span class="eyebrow">How It Works</span>
-      <h2 class="mt-2">From quote to delivery in four steps</h2>
-    </div>
-    <div class="row g-5 g-lg-3 text-center route-line reveal">
-      <div class="col-md-3 route-node">
-        <span class="diamond"></span>
-        <h3 class="h5">1. Request a Quote</h3>
-        <p class="text-secondary small mb-0">Tell us your lane, freight type, and timeline.</p>
-      </div>
-      <div class="col-md-3 route-node">
-        <span class="diamond"></span>
-        <h3 class="h5">2. We Match a Carrier</h3>
-        <p class="text-secondary small mb-0">We source capacity from our vetted network.</p>
-      </div>
-      <div class="col-md-3 route-node">
-        <span class="diamond"></span>
-        <h3 class="h5">3. Freight Is Dispatched</h3>
-        <p class="text-secondary small mb-0">Pickup is scheduled and confirmed with you.</p>
-      </div>
-      <div class="col-md-3 route-node">
-        <span class="diamond"></span>
-        <h3 class="h5">4. Delivered &amp; Tracked</h3>
-        <p class="text-secondary small mb-0">You get updates until it's signed for.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- FREIGHT IN MOTION (GALLERY SLIDER) -->
-<section>
-  <div class="container">
-    <div class="row justify-content-between align-items-end mb-5 reveal">
-      <div class="col-lg-7">
-        <span class="eyebrow">Freight In Motion</span>
-        <h2 class="mt-2 mb-0">A look at what we move.</h2>
-      </div>
-      <div class="col-lg-4 mt-4 mt-lg-0">
-        <p class="text-secondary mb-0">From flatbed machinery to oversized cross-border loads, here's a sample of freight Keystone has coordinated.</p>
-      </div>
-    </div>
-
-    <div id="homeSlider" class="carousel slide carousel-fade kfs-slider reveal" data-bs-ride="carousel" data-bs-touch="true">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="assets/gallery/1.jpg" alt="Flatbed truck hauling agricultural equipment on a clear day">
-          <div class="carousel-caption">
-            <span class="tile-badge">Flatbed</span>
-            <p>Full Truckload — Agricultural Equipment</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="assets/gallery/3.jpg" alt="Flatbed truck hauling wrapped specialized equipment">
-          <div class="carousel-caption">
-            <span class="tile-badge">Flatbed</span>
-            <p>Flatbed — Specialized Equipment</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="assets/gallery/5.jpg" alt="Truck hauling an oversized wrapped load marked Over Size Load in the snow">
-          <div class="carousel-caption">
-            <span class="tile-badge">Oversized</span>
-            <p>Oversized Load — Winter Transport</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="assets/gallery/6.jpg" alt="Truck hauling an oversized wrapped load at dusk on an icy road">
-          <div class="carousel-caption">
-            <span class="tile-badge">Oversized</span>
-            <p>Oversized Load — Cross-Border Route</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="assets/gallery/7.jpg" alt="Truck hauling a wrapped load at night">
-          <div class="carousel-caption">
-            <span class="tile-badge">Night</span>
-            <p>Night Delivery — Time-Critical Freight</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="assets/gallery/9.jpg" alt="Truck hauling an oversized wrapped load on a snowy highway at dusk">
-          <div class="carousel-caption">
-            <span class="tile-badge">Oversized</span>
-            <p>Oversized Load — Highway Transport</p>
-          </div>
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#homeSlider" data-bs-slide="prev">
-        <span class="kfs-slider-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#homeSlider" data-bs-slide="next">
-        <span class="kfs-slider-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#homeSlider" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#homeSlider" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#homeSlider" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        <button type="button" data-bs-target="#homeSlider" data-bs-slide-to="3" aria-label="Slide 4"></button>
-        <button type="button" data-bs-target="#homeSlider" data-bs-slide-to="4" aria-label="Slide 5"></button>
-        <button type="button" data-bs-target="#homeSlider" data-bs-slide-to="5" aria-label="Slide 6"></button>
-      </div>
-    </div>
-
-    <div class="text-center mt-5">
-      <a href="gallery.html" class="btn btn-outline-navy">View Full Gallery</a>
-    </div>
-  </div>
-</section>
-
-<!-- WHY KEYSTONE -->
-<section class="bg-navy">
+<section class="ud-section ud-coverage">
   <div class="container">
     <div class="row align-items-center g-5">
-      <div class="col-lg-5 reveal">
-        <span class="eyebrow on-dark">Why Keystone</span>
-        <h2 class="text-cream mt-2 mb-4">Built on the same principle as our name.</h2>
-        <p style="color: rgba(250,248,243,0.75);">A keystone holds the whole arch together. That's the role we play between shippers and carriers — the reliable centre point that keeps freight, paperwork, and communication locked in place.</p>
-        <a href="about.html" class="btn btn-outline-cream mt-2">More About Us</a>
+      <div class="col-lg-5">
+        <span class="ud-eyebrow">Our network</span>
+        <h2>Based in Edmonton. Moving freight across North America.</h2>
+        <p class="ud-lead mb-4">Western Canada is home, and our cross-border team keeps Canada–U.S. moves customs-ready from pickup to delivery.</p>
+        <a href="contact.html" class="ud-btn">Get a quote</a>
       </div>
       <div class="col-lg-7">
-        <div class="row g-4 reveal">
-          <div class="col-sm-6">
-            <div class="kfs-card-dark">
-              <div class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3 7h7l-5.5 4.5L18.5 21 12 16.5 5.5 21l2-7.5L2 9h7z"/></svg></div>
-              <h3>Carrier Vetting</h3>
-              <p>Every carrier is screened for authority, insurance, and safety history.</p>
-            </div>
-          </div>
-          <div class="col-sm-6">
-            <div class="kfs-card-dark">
-              <div class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h18M3 6h18M3 18h18"/></svg></div>
-              <h3>Transparent Pricing</h3>
-              <p>Straightforward quotes with no hidden accessorial surprises.</p>
-            </div>
-          </div>
-          <div class="col-sm-6">
-            <div class="kfs-card-dark">
-              <div class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
-              <h3>Direct Dispatch Line</h3>
-              <p>A real person you can reach, not a ticket queue.</p>
-            </div>
-          </div>
-          <div class="col-sm-6">
-            <div class="kfs-card-dark">
-              <div class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.24 12.24a6 6 0 0 0-8.49-8.49L5 10.5V19h8.5z"/><path d="M16 8L2 22"/><path d="M17.5 15H9"/></svg></div>
-              <h3>Edmonton Based</h3>
-              <p>Local roots with reach across all of North America.</p>
-            </div>
-          </div>
-        </div>
+        <svg class="ud-lanes-svg" viewBox="0 0 700 360" role="img" aria-label="Diagram of freight lanes leaving Edmonton for Western Canada, the U.S., and the rest of North America">
+          <path class="route" d="M146 180 C 250 180, 260 60, 388 60"/>
+          <path class="route" d="M146 180 L 388 180"/>
+          <path class="route" d="M146 180 C 250 180, 260 300, 388 300"/>
+          <circle class="hub" cx="90" cy="180" r="58"/>
+          <text class="hubtext" x="90" y="188" text-anchor="middle">Edmonton</text>
+          <circle class="stop" cx="400" cy="60" r="12"/><circle class="stop" cx="400" cy="180" r="12"/><circle class="stop" cx="400" cy="300" r="12"/>
+          <text class="label" x="428" y="58">Western Canada</text><text class="sub" x="428" y="82">Dry van, reefer, and flatbed FTL</text>
+          <text class="label" x="428" y="178">Canada–U.S.</text><text class="sub" x="428" y="202">Customs-ready cross-border moves</text>
+          <text class="label" x="428" y="298">Across North America</text><text class="sub" x="428" y="322">Single pallet to full truckload</text>
+        </svg>
       </div>
     </div>
   </div>
 </section>
 
-<!-- CTA -->
-<section class="section-tight" style="background: var(--gold-tint);">
-  <div class="container text-center reveal">
-    <span class="eyebrow">Ready To Ship?</span>
-    <h2 class="mt-2 mb-4">Get a freight quote before the end of the day.</h2>
-    <a href="contact.html" class="btn btn-outline-navy">Contact Keystone Freight Systems</a>
+<section class="ud-section ud-why">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-6">
+        <span class="ud-eyebrow">Why Keystone</span>
+        <h2>One point of contact for the entire shipment</h2>
+        <ul class="ud-check">
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 13l4 4L19 7"/></svg><div><strong>Carrier vetting</strong>Every carrier is screened for authority, insurance, and safety history.</div></li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 13l4 4L19 7"/></svg><div><strong>Transparent pricing</strong>Straightforward quotes with no hidden accessorial surprises.</div></li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 13l4 4L19 7"/></svg><div><strong>Direct dispatch line</strong>A real person you can reach, 24/7, not a ticket queue.</div></li>
+        </ul>
+        <a href="about.html" class="ud-btn ud-btn--ghost">More about us</a>
+      </div>
+      <div class="col-lg-6"><img class="ud-why-img" src="assets/img/gallery/9.jpg" alt="Truck hauling an oversized wrapped load on a snowy highway at dusk"></div>
+    </div>
   </div>
 </section>
 
+<section class="ud-section ud-steps">
+  <div class="container">
+    <span class="ud-eyebrow">How it works</span>
+    <h2>From quote to delivery in four steps</h2>
+    <ol class="ud-steps-flow">
+      <li style="--c:#13304f"><div class="ud-step-num">01</div><div class="ud-step-ring"><div class="ud-step-ico"><svg viewBox="0 0 64 64" aria-hidden="true"><rect x="14" y="8" width="36" height="48" rx="4"/><path d="M22 22h20M22 32h20M22 42h12"/><path d="M40 44l5 5 9-10" class="ac"/></svg></div></div><h3>Request a quote</h3><p>Tell us your lane, freight type, and timeline.</p></li>
+      <li style="--c:#e29f00"><div class="ud-step-num">02</div><div class="ud-step-ring"><div class="ud-step-ico"><svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="24" cy="24" r="9"/><circle cx="44" cy="28" r="7"/><path d="M8 52c0-9 7-15 16-15s16 6 16 15"/><path d="M40 40c8-1 16 3 16 12" class="ac"/></svg></div></div><h3>We match a carrier</h3><p>We source capacity from our vetted network.</p></li>
+      <li style="--c:#fdb515"><div class="ud-step-num">03</div><div class="ud-step-ring"><div class="ud-step-ico"><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M6 42V18h30v24"/><path d="M36 26h12l10 10v6H36"/><circle cx="18" cy="46" r="5" class="ac"/><circle cx="48" cy="46" r="5" class="ac"/><path d="M6 42h7M23 42h20"/></svg></div></div><h3>Freight is dispatched</h3><p>Pickup is scheduled and confirmed with you.</p></li>
+      <li style="--c:#7b8794"><div class="ud-step-num">04</div><div class="ud-step-ring"><div class="ud-step-ico"><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M8 22l24-12 24 12v22L32 56 8 44z"/><path d="M8 22l24 12 24-12M32 34v22"/><path d="M20 16l24 12" class="ac"/></svg></div></div><h3>Delivered and tracked</h3><p>You get updates until it's signed for.</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- GALLERY (existing coverflow, unchanged behaviour) -->
+<section class="ud-section ud-gallery">
+  <div class="container">
+    <span class="ud-eyebrow">Recent loads</span>
+    <h2>Freight in motion</h2>
+
+    <div class="coverflow-header reveal">
+      <div class="coverflow-filters" role="group" aria-label="Filter gallery by category">
+        <button type="button" class="coverflow-pill is-active" data-filter="all">All</button>
+        <button type="button" class="coverflow-pill" data-filter="flatbed">Flatbed &amp; Machinery</button>
+        <button type="button" class="coverflow-pill" data-filter="oversized">Oversized Loads</button>
+        <button type="button" class="coverflow-pill" data-filter="winter-night">Winter &amp; Night Ops</button>
+      </div>
+      <a href="gallery.html" class="coverflow-pill coverflow-pill--cta">
+        View Full Gallery
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg>
+      </a>
+    </div>
+
+    <div class="coverflow reveal" id="homeCoverflow">
+      <div class="coverflow-track" id="coverflowTrack">
+        <button type="button" class="coverflow-slide" data-category="flatbed">
+          <img src="assets/img/gallery/1.jpg" alt="Flatbed truck hauling agricultural equipment on a clear day">
+          <span class="coverflow-caption">Full Truckload — Agricultural Equipment</span>
+        </button>
+        <button type="button" class="coverflow-slide" data-category="flatbed">
+          <img src="assets/img/gallery/2.jpg" alt="Truck loaded with machinery ready for pickup">
+          <span class="coverflow-caption">Flatbed — Ag Equipment Delivery</span>
+        </button>
+        <button type="button" class="coverflow-slide" data-category="flatbed">
+          <img src="assets/img/gallery/3.jpg" alt="Flatbed truck hauling wrapped specialized equipment">
+          <span class="coverflow-caption">Flatbed — Specialized Equipment</span>
+        </button>
+        <button type="button" class="coverflow-slide" data-category="winter-night">
+          <img src="assets/img/gallery/4.jpg" alt="Truck hauling equipment through winter conditions">
+          <span class="coverflow-caption">Winter Lane — Oversized Equipment</span>
+        </button>
+        <button type="button" class="coverflow-slide" data-category="oversized">
+          <img src="assets/img/gallery/5.jpg" alt="Truck hauling an oversized wrapped load marked Over Size Load in the snow">
+          <span class="coverflow-caption">Oversized Load — Winter Transport</span>
+        </button>
+        <button type="button" class="coverflow-slide" data-category="oversized">
+          <img src="assets/img/gallery/6.jpg" alt="Truck hauling an oversized wrapped load at dusk on an icy road">
+          <span class="coverflow-caption">Oversized Load — Cross-Border Route</span>
+        </button>
+        <button type="button" class="coverflow-slide" data-category="winter-night">
+          <img src="assets/img/gallery/7.jpg" alt="Truck hauling a wrapped load at night">
+          <span class="coverflow-caption">Night Delivery — Time-Critical Freight</span>
+        </button>
+        <button type="button" class="coverflow-slide" data-category="flatbed">
+          <img src="assets/img/gallery/8.jpg" alt="Truck loaded with agricultural machinery in an open lot">
+          <span class="coverflow-caption">Flatbed — Machinery &amp; Equipment</span>
+        </button>
+        <button type="button" class="coverflow-slide" data-category="oversized">
+          <img src="assets/img/gallery/9.jpg" alt="Truck hauling an oversized wrapped load on a snowy highway at dusk">
+          <span class="coverflow-caption">Oversized Load — Highway Transport</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="coverflow-nav">
+      <button type="button" class="coverflow-arrow" id="coverflowPrev" aria-label="Previous photo">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+      </button>
+      <button type="button" class="coverflow-arrow" id="coverflowNext" aria-label="Next photo">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
+      </button>
+    </div>
+  </div>
+</section>
+
+<section class="ud-cta">
+  <div class="container ud-cta-body">
+    <h2>Get a freight quote before the end of the day.</h2>
+    <a href="contact.html" class="ud-btn ud-btn--dark">Contact Keystone Freight Systems</a>
+  </div>
+</section>
+
+</main>
+
 <!-- FOOTER -->
-<footer class="kfs-footer">
+<footer class="ud-footer">
   <div class="container">
     <div class="row g-4">
       <div class="col-lg-4">
         <div class="footer-brand">
-          <img src="assets/logo-mark.png" alt="Keystone Freight Systems logo">
+          <img src="assets/img/logo-mark.png" alt="Keystone Freight Systems logo">
           <div>
             <span class="kfs-brand-word d-block">Keystone</span>
             <span class="kfs-brand-sub">Freight Systems</span>
           </div>
         </div>
-        <p class="small">Strength. Service. Solutions. A freight brokerage built to keep shippers and carriers moving together.</p>
+        <p class="mb-3">Strength. Service. Solutions. A freight brokerage built to keep shippers and carriers moving together.</p>
+        <a href="contact.html" class="ud-link">Ship with us
+          <svg viewBox="0 0 24 24"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg></a>
       </div>
       <div class="col-6 col-lg-2">
         <h5>Navigate</h5>
         <ul class="list-unstyled d-flex flex-column gap-2">
           <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About Us</a></li>
+          <li><a href="about.html">About us</a></li>
           <li><a href="services.html">Services</a></li>
           <li><a href="gallery.html">Gallery</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="contact.html">Contact us</a></li>
         </ul>
       </div>
       <div class="col-6 col-lg-3">
         <h5>Services</h5>
         <ul class="list-unstyled d-flex flex-column gap-2">
-          <li><a href="services.html">Full Truckload</a></li>
-          <li><a href="services.html">LTL &amp; Partial</a></li>
-          <li><a href="services.html">Cross-Border Freight</a></li>
-          <li><a href="services.html">Warehousing &amp; Logistics</a></li>
+          <li><a href="services.html">Full truckload</a></li>
+          <li><a href="services.html">LTL &amp; partial</a></li>
+          <li><a href="services.html">Cross-border freight</a></li>
+          <li><a href="services.html">Warehousing &amp; logistics</a></li>
         </ul>
       </div>
       <div class="col-lg-3">
-        <h5>Contact</h5>
+        <h5>Get in touch</h5>
         <ul class="list-unstyled d-flex flex-column gap-2">
           <li>Edmonton, AB, Canada</li>
           <li><a href="mailto:info@keystonefreightsystems.com">info@keystonefreightsystems.com</a></li>
@@ -353,7 +264,7 @@
         </ul>
       </div>
     </div>
-    <div class="footer-bottom d-flex flex-wrap justify-content-between gap-2">
+    <div class="ud-footer-bottom">
       <span>&copy; 2026 Keystone Freight Systems. All rights reserved.</span>
       <span>Edmonton, Alberta, Canada</span>
     </div>
@@ -361,6 +272,6 @@
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script src="js/main.js"></script>
+<script src="assets/js/main.js"></script>
 </body>
 </html>

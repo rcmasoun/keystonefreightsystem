@@ -5,44 +5,54 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Gallery | Keystone Freight Systems</title>
 <meta name="description" content="A look at the freight, fleet, and facilities Keystone Freight Systems coordinates every day out of Edmonton, AB.">
-<link rel="icon" href="assets/logo-mark.png">
+<link rel="icon" href="assets/img/logo-mark.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700;800&display=swap" rel="stylesheet">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-<link href="css/style.css" rel="stylesheet">
+<link href="assets/css/style.css" rel="stylesheet">
 </head>
-<body>
+<body class="ud-home">
 
-<!-- NAVBAR -->
-<nav class="navbar navbar-expand-lg kfs-navbar fixed-top">
+<!-- TOP BAR + NAVBAR -->
+<div class="ud-topbar">
+  <div class="container ud-topbar-inner">
+    <span class="ud-topbar-item ud-topbar-addr"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg>Edmonton, AB, Canada</span>
+    <a class="ud-topbar-item" href="mailto:info@keystonefreightsystems.com"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>info@keystonefreightsystems.com</a>
+    <a class="ud-topbar-item" href="tel:+17805550123"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>+1 (780) 555-0123</a>
+  </div>
+</div>
+
+<nav class="navbar navbar-expand-lg ud-nav" data-bs-theme="light" aria-label="Main">
   <div class="container">
     <a class="navbar-brand" href="index.html">
-      <img src="assets/logo-mark.png" alt="Keystone Freight Systems logo">
-      <span>
-        <span class="kfs-brand-word d-block">Keystone</span>
-        <span class="kfs-brand-sub">Freight Systems</span>
-      </span>
+      <img src="assets/img/logo-mark.png" alt="Keystone Freight Systems logo">
+      <span><span class="kfs-brand-word d-block">Keystone</span><span class="kfs-brand-sub">Freight Systems</span></span>
     </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#kfsNav" aria-controls="kfsNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#kfsNav" aria-controls="kfsNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
     <div class="collapse navbar-collapse" id="kfsNav">
       <ul class="navbar-nav ms-auto align-items-lg-center">
         <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
-        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-        <li class="nav-item"><a class="nav-link active" href="gallery.html">Gallery</a></li>
-        <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
-        <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
-          <a class="btn btn-gold btn-sm" href="contact.html">Get A Quote</a>
+        <li class="nav-item"><a class="nav-link" href="about.html">About us</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="services.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Services</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="services.html">All services</a></li>
+            <li><a class="dropdown-item" href="services.html">Full truckload</a></li>
+            <li><a class="dropdown-item" href="services.html">LTL &amp; partial</a></li>
+            <li><a class="dropdown-item" href="services.html">Cross-border freight</a></li>
+            <li><a class="dropdown-item" href="services.html">Live load tracking</a></li>
+          </ul>
         </li>
+        <li class="nav-item"><a class="nav-link active" href="gallery.html">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact us</a></li>
+        <li class="nav-item ms-lg-3 mt-3 mt-lg-0"><a class="ud-btn" href="contact.html">Request a quote</a></li>
       </ul>
     </div>
   </div>
 </nav>
 
 <!-- PAGE HERO -->
-<header class="page-hero page-hero--photo" style="padding-top: 9.5rem; --hero-photo: url('assets/gallery/9.jpg');">
+<header class="page-hero page-hero--photo" style="padding-top: 9.5rem; --hero-photo: url('assets/img/gallery/9.jpg');">
   <div class="container position-relative">
     <span class="eyebrow on-dark">Gallery</span>
     <h1 class="mt-2">Freight in motion.</h1>
@@ -66,9 +76,9 @@
       <div class="col-md-6 col-lg-8">
         <button type="button" class="gallery-tile gallery-tile--wide reveal" style="--reveal-i:0" data-category="flatbed"
           data-bs-toggle="modal" data-bs-target="#galleryLightbox"
-          data-img="assets/gallery/1.jpg" data-caption="Full Truckload — Agricultural Equipment">
+          data-img="assets/img/gallery/1.jpg" data-caption="Full Truckload — Agricultural Equipment">
           <span class="tile-badge">Flatbed</span>
-          <img src="assets/gallery/1.jpg" alt="Flatbed truck hauling agricultural equipment on a clear day">
+          <img src="assets/img/gallery/1.jpg" alt="Flatbed truck hauling agricultural equipment on a clear day">
           <span class="zoom-hint"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></span>
           <figcaption>Full Truckload — Agricultural Equipment</figcaption>
         </button>
@@ -77,9 +87,9 @@
       <div class="col-md-6 col-lg-4">
         <button type="button" class="gallery-tile reveal" style="--reveal-i:1" data-category="flatbed"
           data-bs-toggle="modal" data-bs-target="#galleryLightbox"
-          data-img="assets/gallery/2.jpg" data-caption="Flatbed — Ag Equipment Delivery">
+          data-img="assets/img/gallery/2.jpg" data-caption="Flatbed — Ag Equipment Delivery">
           <span class="tile-badge">Flatbed</span>
-          <img src="assets/gallery/2.jpg" alt="Truck loaded with machinery ready for pickup">
+          <img src="assets/img/gallery/2.jpg" alt="Truck loaded with machinery ready for pickup">
           <span class="zoom-hint"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></span>
           <figcaption>Flatbed — Ag Equipment Delivery</figcaption>
         </button>
@@ -88,9 +98,9 @@
       <div class="col-md-6 col-lg-4">
         <button type="button" class="gallery-tile reveal" style="--reveal-i:2" data-category="flatbed"
           data-bs-toggle="modal" data-bs-target="#galleryLightbox"
-          data-img="assets/gallery/3.jpg" data-caption="Flatbed — Specialized Equipment">
+          data-img="assets/img/gallery/3.jpg" data-caption="Flatbed — Specialized Equipment">
           <span class="tile-badge">Flatbed</span>
-          <img src="assets/gallery/3.jpg" alt="Flatbed truck hauling wrapped specialized equipment">
+          <img src="assets/img/gallery/3.jpg" alt="Flatbed truck hauling wrapped specialized equipment">
           <span class="zoom-hint"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></span>
           <figcaption>Flatbed — Specialized Equipment</figcaption>
         </button>
@@ -99,9 +109,9 @@
       <div class="col-md-6 col-lg-4">
         <button type="button" class="gallery-tile reveal" style="--reveal-i:3" data-category="winter-night"
           data-bs-toggle="modal" data-bs-target="#galleryLightbox"
-          data-img="assets/gallery/4.jpg" data-caption="Winter Lane — Oversized Equipment">
+          data-img="assets/img/gallery/4.jpg" data-caption="Winter Lane — Oversized Equipment">
           <span class="tile-badge">Winter</span>
-          <img src="assets/gallery/4.jpg" alt="Truck hauling equipment through winter conditions">
+          <img src="assets/img/gallery/4.jpg" alt="Truck hauling equipment through winter conditions">
           <span class="zoom-hint"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></span>
           <figcaption>Winter Lane — Oversized Equipment</figcaption>
         </button>
@@ -110,9 +120,9 @@
       <div class="col-md-6 col-lg-4">
         <button type="button" class="gallery-tile reveal" style="--reveal-i:4" data-category="oversized"
           data-bs-toggle="modal" data-bs-target="#galleryLightbox"
-          data-img="assets/gallery/5.jpg" data-caption="Oversized Load — Winter Transport">
+          data-img="assets/img/gallery/5.jpg" data-caption="Oversized Load — Winter Transport">
           <span class="tile-badge">Oversized</span>
-          <img src="assets/gallery/5.jpg" alt="Truck hauling an oversized wrapped load marked Over Size Load in the snow">
+          <img src="assets/img/gallery/5.jpg" alt="Truck hauling an oversized wrapped load marked Over Size Load in the snow">
           <span class="zoom-hint"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></span>
           <figcaption>Oversized Load — Winter Transport</figcaption>
         </button>
@@ -121,9 +131,9 @@
       <div class="col-md-6 col-lg-8">
         <button type="button" class="gallery-tile gallery-tile--wide reveal" style="--reveal-i:5" data-category="oversized"
           data-bs-toggle="modal" data-bs-target="#galleryLightbox"
-          data-img="assets/gallery/6.jpg" data-caption="Oversized Load — Cross-Border Route">
+          data-img="assets/img/gallery/6.jpg" data-caption="Oversized Load — Cross-Border Route">
           <span class="tile-badge">Oversized</span>
-          <img src="assets/gallery/6.jpg" alt="Truck hauling an oversized wrapped load at dusk on an icy road">
+          <img src="assets/img/gallery/6.jpg" alt="Truck hauling an oversized wrapped load at dusk on an icy road">
           <span class="zoom-hint"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></span>
           <figcaption>Oversized Load — Cross-Border Route</figcaption>
         </button>
@@ -132,9 +142,9 @@
       <div class="col-md-6 col-lg-4">
         <button type="button" class="gallery-tile reveal" style="--reveal-i:6" data-category="winter-night"
           data-bs-toggle="modal" data-bs-target="#galleryLightbox"
-          data-img="assets/gallery/7.jpg" data-caption="Night Delivery — Time-Critical Freight">
+          data-img="assets/img/gallery/7.jpg" data-caption="Night Delivery — Time-Critical Freight">
           <span class="tile-badge">Night</span>
-          <img src="assets/gallery/7.jpg" alt="Truck hauling a wrapped load at night">
+          <img src="assets/img/gallery/7.jpg" alt="Truck hauling a wrapped load at night">
           <span class="zoom-hint"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></span>
           <figcaption>Night Delivery — Time-Critical Freight</figcaption>
         </button>
@@ -143,9 +153,9 @@
       <div class="col-md-6 col-lg-4">
         <button type="button" class="gallery-tile reveal" style="--reveal-i:7" data-category="flatbed"
           data-bs-toggle="modal" data-bs-target="#galleryLightbox"
-          data-img="assets/gallery/8.jpg" data-caption="Flatbed — Machinery &amp; Equipment">
+          data-img="assets/img/gallery/8.jpg" data-caption="Flatbed — Machinery &amp; Equipment">
           <span class="tile-badge">Flatbed</span>
-          <img src="assets/gallery/8.jpg" alt="Truck loaded with agricultural machinery in an open lot">
+          <img src="assets/img/gallery/8.jpg" alt="Truck loaded with agricultural machinery in an open lot">
           <span class="zoom-hint"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></span>
           <figcaption>Flatbed — Machinery &amp; Equipment</figcaption>
         </button>
@@ -154,9 +164,9 @@
       <div class="col-md-6 col-lg-4">
         <button type="button" class="gallery-tile reveal" style="--reveal-i:8" data-category="oversized"
           data-bs-toggle="modal" data-bs-target="#galleryLightbox"
-          data-img="assets/gallery/9.jpg" data-caption="Oversized Load — Highway Transport">
+          data-img="assets/img/gallery/9.jpg" data-caption="Oversized Load — Highway Transport">
           <span class="tile-badge">Oversized</span>
-          <img src="assets/gallery/9.jpg" alt="Truck hauling an oversized wrapped load on a snowy highway at dusk">
+          <img src="assets/img/gallery/9.jpg" alt="Truck hauling an oversized wrapped load on a snowy highway at dusk">
           <span class="zoom-hint"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></span>
           <figcaption>Oversized Load — Highway Transport</figcaption>
         </button>
@@ -191,40 +201,42 @@
 </section>
 
 <!-- FOOTER -->
-<footer class="kfs-footer">
+<footer class="ud-footer">
   <div class="container">
     <div class="row g-4">
       <div class="col-lg-4">
         <div class="footer-brand">
-          <img src="assets/logo-mark.png" alt="Keystone Freight Systems logo">
+          <img src="assets/img/logo-mark.png" alt="Keystone Freight Systems logo">
           <div>
             <span class="kfs-brand-word d-block">Keystone</span>
             <span class="kfs-brand-sub">Freight Systems</span>
           </div>
         </div>
-        <p class="small">Strength. Service. Solutions. A freight brokerage built to keep shippers and carriers moving together.</p>
+        <p class="mb-3">Strength. Service. Solutions. A freight brokerage built to keep shippers and carriers moving together.</p>
+        <a href="contact.html" class="ud-link">Ship with us
+          <svg viewBox="0 0 24 24"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg></a>
       </div>
       <div class="col-6 col-lg-2">
         <h5>Navigate</h5>
         <ul class="list-unstyled d-flex flex-column gap-2">
           <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About Us</a></li>
+          <li><a href="about.html">About us</a></li>
           <li><a href="services.html">Services</a></li>
           <li><a href="gallery.html">Gallery</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="contact.html">Contact us</a></li>
         </ul>
       </div>
       <div class="col-6 col-lg-3">
         <h5>Services</h5>
         <ul class="list-unstyled d-flex flex-column gap-2">
-          <li><a href="services.html">Full Truckload</a></li>
-          <li><a href="services.html">LTL &amp; Partial</a></li>
-          <li><a href="services.html">Cross-Border Freight</a></li>
-          <li><a href="services.html">Warehousing &amp; Logistics</a></li>
+          <li><a href="services.html">Full truckload</a></li>
+          <li><a href="services.html">LTL &amp; partial</a></li>
+          <li><a href="services.html">Cross-border freight</a></li>
+          <li><a href="services.html">Warehousing &amp; logistics</a></li>
         </ul>
       </div>
       <div class="col-lg-3">
-        <h5>Contact</h5>
+        <h5>Get in touch</h5>
         <ul class="list-unstyled d-flex flex-column gap-2">
           <li>Edmonton, AB, Canada</li>
           <li><a href="mailto:info@keystonefreightsystems.com">info@keystonefreightsystems.com</a></li>
@@ -232,7 +244,7 @@
         </ul>
       </div>
     </div>
-    <div class="footer-bottom d-flex flex-wrap justify-content-between gap-2">
+    <div class="ud-footer-bottom">
       <span>&copy; 2026 Keystone Freight Systems. All rights reserved.</span>
       <span>Edmonton, Alberta, Canada</span>
     </div>
@@ -240,7 +252,7 @@
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script src="js/main.js"></script>
+<script src="assets/js/main.js"></script>
 <script>
 (function () {
   "use strict";
